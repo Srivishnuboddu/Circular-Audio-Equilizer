@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice to Text</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <header class="hero">
+      <h1>Voice to Text</h1>
+      <p>Transform your speech into text instantly with our<br/>advanced AI transcription</p>
+    </header>
+    <!-- Visualizer -->
+    <div class="visualizer-wrapper">
+      <canvas id="visualizer"></canvas>
+    </div>
+    <!-- Mic Button -->
+    <div class="mic-section">
+      <button id="startBtn" class="mic-btn">
+        🎤
+      </button>
+      <span class="mic-text">Tap to start recording</span>
+    </div>
+    <!-- Transcription Card -->
+    <div class="transcription-card">
+      <div class="card-header">
+        <span>🎙 Live Transcription</span>
+      </div>
+      <div id="transcriptionBox" class="transcription-box">
+        <p class="placeholder">
+          Your transcription will appear here.<br/>
+          Start speaking to see the magic!
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      Built with Web Speech API · Real-time transcription
+    </footer>
+
+  </div>
+
+  <script type="module" src="../src/main.js"></script>
+</body>
+</html>

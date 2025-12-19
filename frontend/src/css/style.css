@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b1a2a, #05080f);
+  color: #e5f6ff;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Hero */
+.hero .badge {
+  color: #4fd1ff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.hero p {
+  color: #9bb3c7;
+  font-size: 16px;
+}
+
+/* Visualizer */
+.visualizer-wrapper {
+  margin: 50px 0 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.visualizer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+canvas {
+  width: 320px;
+  height: 320px;
+}
+
+
+/* Mic Button */
+.mic-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mic-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background: radial-gradient(circle, #22d3ee, #2563eb);
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 35px rgba(34, 211, 238, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.mic-btn:hover {
+  transform: scale(1.05);
+}
+
+.mic-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+
+.mic-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Transcription Card */
+.transcription-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 40px auto 0;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.card-header {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.transcription-box {
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+  min-height: 120px;
+  padding: 20px;
+  color: #e6f7ff;
+  text-align: left;
+}
+
+.placeholder {
+  color: #7f9db5;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #6f8fa8;
+}
+
+.center-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+}
